@@ -1,4 +1,4 @@
-package com.easywritten
+package com.easywritten.scrum
 
 import zio.Has
 
