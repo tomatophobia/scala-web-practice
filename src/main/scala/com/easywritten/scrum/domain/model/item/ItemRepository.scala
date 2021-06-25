@@ -9,6 +9,6 @@ object ItemRepository {
   }
 
   def getItems: ZIO[ItemRepository, Throwable, List[Item]] =
-    ZIO.accessM(_.get.getItems)
+    ZIO.serviceWith(_.getItems)
 
 }

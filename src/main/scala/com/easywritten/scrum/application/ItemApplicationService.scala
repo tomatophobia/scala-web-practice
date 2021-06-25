@@ -24,5 +24,5 @@ object ItemApplicationService {
     }
 
   def getItems: ZIO[ItemApplicationService, Throwable, List[Item]] =
-    ZIO.accessM(_.get.getItems)
+    ZIO.serviceWith(_.getItems)
 }
