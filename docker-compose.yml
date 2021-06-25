@@ -16,5 +16,5 @@ services:
     ports:
       - "8080:8080"
     environment:
-      - SCRUM_DB_HOST=postgres
+      - SCRUM_DB_HOST=postgres-scrum
     command: /bin/bash -c "sbt run"
