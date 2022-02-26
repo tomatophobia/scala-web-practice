@@ -61,6 +61,13 @@ libraryDependencies ++= Seq(
 
 libraryDependencies ++= Seq("com.github.pureconfig" %% "pureconfig" % "0.16.0")
 
+libraryDependencies ++= Seq(
+  "com.beachape" %% "enumeratum" % "1.7.0",
+  "com.beachape" %% "enumeratum-cats" % "1.7.0",
+  "com.beachape" %% "enumeratum-circe" % "1.7.0",
+  "com.beachape" %% "enumeratum-doobie" % "1.7.0"
+)
+
 addCompilerPlugin(
   "org.typelevel" % "kind-projector" % "0.13.0" cross CrossVersion.full
 )
